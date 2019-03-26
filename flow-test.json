@@ -1,0 +1,53 @@
+[
+    {
+        "id": "cf3b97e.6073368",
+        "type": "tab",
+        "label": "Teste",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c5e14107.5cf17",
+        "type": "http in",
+        "z": "cf3b97e.6073368",
+        "name": "",
+        "url": "/teste",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "dbf1dd82.53f55"
+            ]
+        ]
+    },
+    {
+        "id": "dbf1dd82.53f55",
+        "type": "function",
+        "z": "cf3b97e.6073368",
+        "name": "Set Payload",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "4c5a8b94.e3d094"
+            ]
+        ],
+        "func": "msg.payload = 'Fernando';\nreturn msg;"
+    },
+    {
+        "id": "4c5a8b94.e3d094",
+        "type": "http response",
+        "z": "cf3b97e.6073368",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 470,
+        "y": 100,
+        "wires": []
+    }
+]

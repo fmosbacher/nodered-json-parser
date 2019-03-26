@@ -1,0 +1,8 @@
+{
+  "name": "node-red-parser",
+  "description": "Node-RED JSON Parser",
+  "version": "0.0.1",
+  "dependencies": {
+    "rimraf": "^2.6.3"
+  }
+}
